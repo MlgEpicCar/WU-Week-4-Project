@@ -27,7 +27,7 @@ function print() {
     if (userName && phone && desc) {
         const obj = new Lost(userName, phone, desc);
         document.getElementById("result").innerHTML = `${obj.userName.split(" ")[0]}, someone will call you within one business day. Description: ${obj.desc}`;
-        clear(document.getElementsByClassName("text"));
+        clear(document.getElementsByTagName("input"));
     } else {
         document.getElementById("result").innerHTML = `*** Please fill out all fields ***`;
     }
