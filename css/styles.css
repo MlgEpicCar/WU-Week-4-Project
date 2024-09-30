@@ -7,12 +7,15 @@ h1 {
     text-align: center;
 }
 
-h3 {
+#result {
     color: white;
     text-align: center;
+    font-size: 20px;
 }
 
 label {
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: white;
     display: flex;
 }

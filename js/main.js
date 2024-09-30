@@ -5,14 +5,30 @@ img.src = "/images/Logo.jpg";
 src = document.getElementById("img");
 src.appendChild(img);
 
-function print() {
-    const name = document.getElementById("name").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const desc = document.getElementById("desc").value.trim();
+function Lost(username, phone, description) {
+    this.userName = username;
+    this.phone = phone;
+    this.desc = description;
+}
 
-    if (!name || !phone || !desc) {
-        document.getElementById("h3").textContent = `*** Please fill out all fields ***`;
+function clear(inputs) {
+    for (let text of inputs) {
+        if (text.value) {
+            text.value = ""; 
+        }
+    }
+}
+
+function print() {
+    var userName = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var desc = document.getElementById("desc").value;
+
+    if (userName && phone && desc) {
+        const obj = new Lost(userName, phone, desc);
+        document.getElementById("result").innerHTML = `${obj.userName.split(" ")[0]}, someone will call you within one business day. Description: ${obj.desc}`;
+        clear(document.getElementsByClassName("text"));
     } else {
-        document.getElementById("h3").textContent = `${name}, someone will call you within one business day. Description: ${desc}`;
+        document.getElementById("result").innerHTML = `*** Please fill out all fields ***`;
     }
 }
