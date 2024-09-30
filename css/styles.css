@@ -22,9 +22,16 @@ div {
     justify-content: center; 
 }
 
+button {
+    margin: 20px;
+    padding: 5px;
+    font-weight: 700;
+    color: green;
+}
+
 img {
     height: 108px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
     border-color: white;
 }
