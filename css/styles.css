@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+label {
+    color: white;
+    display: flex;
+}
+
+div {
+    display: flex;
+    justify-content: center; 
+}
+
+img {
+    height: 108px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
