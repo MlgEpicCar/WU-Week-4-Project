@@ -13,9 +13,7 @@ function Lost(username, phone, description) {
 
 function clear(inputs) {
     for (let text of inputs) {
-        if (text.value) {
-            text.value = ""; 
-        }
+        text.value = ""; 
     }
 }
 
